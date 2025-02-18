@@ -85,9 +85,6 @@ const Home = () => {
     const category = data.find(each => each.menuCategoryId === activeTabID)
 
     if (category !== undefined) {
-      console.log(category)
-      console.log(category.categoryDishes)
-      console.log(category.menuCategory)
       return (
         <ul className="dishes-list">
           {category.categoryDishes.map(eachDish => (
@@ -102,6 +99,7 @@ const Home = () => {
         </ul>
       )
     }
+    return ''
   }
 
   const renderTabsMenuList = () =>
@@ -134,5 +132,3 @@ const Home = () => {
 }
 
 export default Home
-
-

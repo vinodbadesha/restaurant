@@ -1,5 +1,4 @@
-import {AiOutlinePlus} from 'react-icons/ai'
-import {AiOutlineMinus} from 'react-icons/ai'
+import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai'
 import './index.css'
 
 const DishItem = ({
@@ -50,9 +49,8 @@ const DishItem = ({
           </button>
         </div>
       )
-    } else {
-      return <p>Not available</p>
     }
+    return <p>Not available</p>
   }
 
   const renderVegNonVeg = () => {
@@ -62,7 +60,7 @@ const DishItem = ({
 
     return (
       <div className={`${box}`}>
-        <div className={`${circle}`}></div>
+        <div className={`${circle}`}> </div>
       </div>
     )
   }
@@ -94,5 +92,3 @@ const DishItem = ({
 }
 
 export default DishItem
-
-
